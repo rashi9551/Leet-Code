@@ -1,21 +1,19 @@
-    let count=1
-    let i=0
-var maxOperations = function(nums) {
- */
- * @return {number}
- * @param {number[]} nums
-/**
     if(nums.length%2==1)nums.pop()
+    {
     while(i<nums.length)
-    {
-        if(nums[i+1]){
-        nums[i]=nums[i]+nums[i+1]
+        let sum=nums[i]+nums[i+1]
+var maxOperations = function(nums) {
+    let i=2
+    let count=1
+    let sums=nums[0]+nums[1]
+        if(sums==sum)
+        {
+            count++
         }
-        nums.splice(i+1,1)
-        i++
+        i+=2 
     }
-    for(let i=0;i<nums.length;i++)
-    {
-        if(nums[i]===nums[i+1]){count++}
-        else
+    return count
+    
+    
+};
 [
