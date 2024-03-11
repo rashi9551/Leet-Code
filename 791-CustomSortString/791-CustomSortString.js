@@ -1,26 +1,23 @@
-            map.delete(order[j])
-            res+=order[j].repeat(map.get(order[j]))
-        {
-        if(map.has(order[j]))
+    for (let i = 0; i < s.length; i++) {
 
-        }
-    }
-    map.forEach((value,key)=>{
-        if(value>0)
-        {
-    {
-    for(let j=0;j<order.length;j++)
-    }
-        map.set(s[i],(map.get(s[i])||0)+1)
-    {
-    for(let i=0;i<s.length;i++)
-    let res=""
+    let orderedString = "";
+    let map = new Map();
+    let letters = new Set(order);
 var customSortString = function(order, s) {
-    let map=new Map()
-            res+=key.repeat(value)
+ */
+ * @return {string}
+        if (letters.has(s[i])) {
+            map.set(s[i], (map.get(s[i]) || "") + s[i]);
+        } else {
+            orderedString += s[i];
         }
-    })
+    }
     
-   
-    return res
+    for (let letter of letters) {
+        orderedString += (map.get(letter) || "");
+    }
+
+    return orderedString;
+
+};
 "
