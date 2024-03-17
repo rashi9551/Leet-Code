@@ -17,4 +17,5 @@ var areaOfMaxDiagonal = function(dimensions) {
     }
     return res
     
+};
 [
