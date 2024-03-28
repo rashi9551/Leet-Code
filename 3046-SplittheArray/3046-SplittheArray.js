@@ -1,19 +1,14 @@
-        if(map.has(val))
-        {
-        }else{
-            map.set(val,1)
-        }
+    {
+        if(nums[i]==nums[i+2])return false
     }
-            map.set(val,map.get(val)+1)
-    for(let [key,value] of map){
-        if(value>2){
-    }
-            return false
-        }
     return true
     
-    for(let val of nums){
-    let map=new Map()
-var isPossibleToSplit = function(nums) {
 };
+    for(i=0;i<nums.length-2;i++)
+    nums.sort((a,b)=>(a-b))
+var isPossibleToSplit = function(nums) {
+/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */
 [
