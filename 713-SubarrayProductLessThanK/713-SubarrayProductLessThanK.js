@@ -1,18 +1,14 @@
-        let power=1
-        for(j=i;j<nums.length;j++)
+        //     }else{
+        //         break
+        //     }
+        // }
+        while(power<k)
         {
             power*=nums[j]
-            if(power<k)
-            {
-                count++
-            }else{
-                break
-            }
+            if(power<k)count++
+            j++
         }
     }
-    {
-    for(i=0;i<nums.length;i++)
-    let count=0
-var numSubarrayProductLessThanK = function(nums, k) {
- */
+    return count
+};
 [
