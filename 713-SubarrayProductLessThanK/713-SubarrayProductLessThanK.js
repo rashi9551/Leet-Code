@@ -3,19 +3,18 @@ var numSubarrayProductLessThanK = function(nums, k) {
     for(i=0;i<nums.length;i++)
     {
         let power=1
-        for(j=i;power<k;j++)
  */
+ * @return {number}
+ * @param {number[]} nums
+ * @param {number} k
+        for(j=i;power<k;j++)
         {
             power*=nums[j]
-                count++
- * @return {number}
- * @param {number} k
- * @param {number[]} nums
-            }
-            if(power<k)
-            {
+            if(power<k)count++
+            else break
         }
     }
     return count
 };
+/**
 [
