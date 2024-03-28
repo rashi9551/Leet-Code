@@ -1,7 +1,6 @@
-        //     }else{
-        //         break
-        //     }
-        // }
+        let j=i
+        let power=1
+    {
         while(power<k)
         {
             power*=nums[j]
