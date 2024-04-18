@@ -1,5 +1,3 @@
-/**
- * @param {number[][]} dimensions
  * @return {number}
  */
 var areaOfMaxDiagonal = function(dimensions) {
@@ -8,14 +6,4 @@ var areaOfMaxDiagonal = function(dimensions) {
     for(let [a,b] of dimensions)
     {
         const d=(a*a)+(b*b)
-        if(d>dMax || (d===dMax && a*b>res))
-        {
-            res=a*b
-            dMax=Math.max(dMax,d)
-
-        }
-    }
-    return res
-    
-};
 [
