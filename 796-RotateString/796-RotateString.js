@@ -12,7 +12,6 @@ var rotateString = function(s, goal) {
         for(let i=0;i<goal.length;i++)
         {
             const subs=str.substring(j,k)
-            console.log(subs)
             if(subs===goal)return true
             j++
             k++
