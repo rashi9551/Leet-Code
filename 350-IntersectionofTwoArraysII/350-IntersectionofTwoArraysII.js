@@ -1,11 +1,30 @@
-        for (let i = 0; i < nums1.length; i++) {
-            let index = nums2.indexOf(nums1[i]); 
-            if (index !== -1) { 
-                res.push(nums1[i]);
-                nums2.splice(index, 1); 
-                console.log(nums2); 
-            }
+var intersect = function (nums1, nums2) {
+   nums1 = nums1.sort((a,b)=>a-b);
+    nums2 = nums2.sort((a,b)=>a-b);
+    
+    let i = 0 
+    let j = 0
+    let returnArray = [];
+    
+    while(j < nums2.length && i < nums1.length){
+        if(nums1[i] === nums2[j]){
+            returnArray.push(nums1[i]);
+            i++;
+            j++;
         }
+        else if(nums1[i] > nums2[j]){
+            j++;
+        }
+        else{
+            i++;
+        }
+    }
+ */
+ * @return {number[]}
+ * @param {number[]} nums2
+    
+ * @param {number[]} nums1
+/**
 [1,2,2,1]
 [2,2]
 [4,9,5]
