@@ -1,16 +1,14 @@
-/**
- * @param {string[][]} paths
- * @return {string}
  */
 var destCity = function(paths) {
-    let obj={}
-    let ans=''
-    for(let i=0 ;i<paths.length;i++){
-        obj[paths[i][1]]=true
+    const map = new Map();
+  for (const path of paths) {
+    map.set(path[0], map.has(path[0]) ? 0 : 1);
+    map.set(path[1], map.has(path[1]) ? 0 : -1);
+  }
+    for (const item of map) {
+        if (item[1] === -1) return item[0];
     }
-    for(let i=0 ;i<paths.length;i++){
-        if(obj[paths[i][0]]){
-            delete obj[paths[i][0]]
-        }
-    }
-    return Object.keys(obj)[0]
+};
+ * @return {string}
+ * @param {string[][]} paths
+/**
