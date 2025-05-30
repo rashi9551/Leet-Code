@@ -1,15 +1,11 @@
-            count++
-        }else{
-        if(nums[i]<nums[i+1]){
-        console.log(nums[i])
-    while(i<nums.length){
+    return maxCount;
+    }
 
-    if(new Set(nums).size===1)return 1
-    let count = 1
-    let maxCount=-Infinity
-    let i = 0;
+};
+        maxCount = Math.max(maxCount, count);
+        count = nums[i] > nums[i - 1] ? count + 1 : 1;
+    for (let i = 1; i < nums.length; i++) {
+    let maxCount = 1, count = 1;
+    if (nums.length === 0) return 0;
 var findLengthOfLCIS = function(nums) {
  */
- * @return {number}
-/**
- * @param {number[]} nums
