@@ -10,6 +10,5 @@ var duplicateZeros = function(arr) {
             i++
         }
     }
-    console.log(arr)
-            arr.pop()
 };
+            arr.pop()
