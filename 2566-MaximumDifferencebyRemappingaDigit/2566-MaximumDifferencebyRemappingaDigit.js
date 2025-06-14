@@ -2,10 +2,11 @@
         if (str[i] != '9') {
             first += str[i]
             break
+    let str = num.toString()
+    let first = ''
+var minMaxDifference = function (num) {
+ */
+ * @return {number}
+ * @param {number} num
+/**
         }
-    }
-    let num1 = Number(str.replaceAll(first===''?'0':first, 9))
-    let num2 = Number(str.replaceAll(str[0], 0))
-    console.log(num1,num2)
-    return num1 - num2
-};
