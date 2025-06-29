@@ -1,17 +1,12 @@
-    nums = [...new Set(nums)]
-    let tm = nums[0] - 2
-    let sm = nums[0] - 1
-    let fm = nums[0]
-
     for (let val of nums) {
+
+
         if (val > fm) {
             tm = sm
-            sm = fm
-            fm = val
-        }
-
-    }
+    let fm = -Infinity, sm = -Infinity, tm = -Infinity;
     if (nums.length <= 2) return Math.max(...nums)
-    return tm
-};
+    nums = [...new Set(nums)]
 var thirdMax = function (nums) {
+ */
+ * @return {number}
+            sm = fm
